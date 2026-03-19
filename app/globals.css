@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Trustworthy, modern design system */
+  --background: 220 40% 98%; /* light gray */
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  /* Deep violet primary (#4C1D95) */
+  --primary: 263.5 67.4% 34.9%;
+  --primary-foreground: 210 40% 98%;
+
+  /* Amber accent (#F59E0B) */
+  --accent: 37.7 92.1% 50.2%;
+  --accent-foreground: 20 14% 4%;
+
+  /* Alert red (#DC2626) */
+  --destructive: 0 72.2% 50.6%;
+
+  --secondary: 217 33% 93%;
+  --secondary-foreground: 222.2 84% 4.9%;
+
+  --muted: 217 33% 93%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 263.5 67.4% 34.9%;
+  --ring-offset-background: 220 40% 98%;
+
+  --radius: 0.9rem;
+}
+
+/* Optional dark tokens for components that rely on `.dark` */
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+
+  --card: 240 10% 6%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 240 10% 6%;
+  --popover-foreground: 0 0% 98%;
+
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --muted: 240 5% 19%;
+  --muted-foreground: 240 4% 65%;
+  --ring-offset-background: 240 10% 3.9%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+

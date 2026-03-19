@@ -169,9 +169,9 @@ export default function StudentPortal() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div className="bridge-hero flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border bg-white/80 px-3 py-1 text-sm">
+          <div className="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1 text-sm shadow-sm">
             <Users className="h-4 w-4 text-primary" />
             <span className="text-muted-foreground">Meridian State University</span>
           </div>
@@ -187,7 +187,7 @@ export default function StudentPortal() {
 
       <div className="grid gap-6 lg:grid-cols-[1fr,320px]">
         <div className="space-y-6">
-          <Card className="border-slate-200 bg-white/85">
+          <Card className="bridge-card">
             <CardHeader className="pb-4">
               <CardTitle className="text-base">Aid Status</CardTitle>
               <CardDescription>Your current financial aid pipeline at a glance.</CardDescription>
@@ -217,7 +217,7 @@ export default function StudentPortal() {
             </CardContent>
           </Card>
 
-          <Card className="border-slate-200 bg-white/85">
+          <Card className="bridge-card">
             <CardHeader className="pb-4">
               <CardTitle className="text-base">Deadline Alerts</CardTitle>
               <CardDescription>Color-coded urgency based on your timeline.</CardDescription>
@@ -239,7 +239,7 @@ export default function StudentPortal() {
             </CardContent>
           </Card>
 
-          <Card className="border-slate-200 bg-white/85">
+          <Card className="bridge-card">
             <CardHeader className="pb-4">
               <CardTitle className="text-base">Documents Needed</CardTitle>
               <CardDescription>Upload required items. Each upload runs a mock 2-second pre-screening.</CardDescription>
@@ -262,7 +262,7 @@ export default function StudentPortal() {
         </div>
 
         <div className="space-y-6">
-          <Card className="border-slate-200 bg-white/90">
+          <Card className="bridge-card">
             <CardHeader>
               <CardTitle className="text-base">My Support Team</CardTitle>
               <CardDescription>Assigned to help you avoid registration delays.</CardDescription>

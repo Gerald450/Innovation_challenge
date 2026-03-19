@@ -45,6 +45,16 @@ export default function CounselorPortal() {
 
   return (
     <div className="space-y-6">
+      <div className="bridge-hero">
+        <div className="text-xs font-semibold uppercase tracking-wide text-primary/90">
+          Financial Aid Counselor Portal
+        </div>
+        <h1 className="mt-2 text-2xl font-bold tracking-tight">Case Management Workspace</h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Prioritize urgent student cases while keeping all final rulings human-led.
+        </p>
+      </div>
+
       {bannerMessage ? (
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm">
           <div className="font-semibold text-amber-900">Recorded (mock)</div>
@@ -54,7 +64,7 @@ export default function CounselorPortal() {
 
       <div className="grid gap-6 lg:grid-cols-[260px,1fr]">
         <aside className="space-y-4">
-          <Card className="border-slate-200 bg-white/85">
+          <Card className="bridge-card">
             <CardHeader>
               <CardTitle className="text-base">Queue Metrics</CardTitle>
               <CardDescription>Operational snapshot for active cases.</CardDescription>
@@ -83,7 +93,7 @@ export default function CounselorPortal() {
         <section className="space-y-6">
           <div className="grid gap-6 xl:grid-cols-[420px,1fr]">
             <div className="space-y-4">
-              <Card className="border-slate-200 bg-white/85">
+              <Card className="bridge-card">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-base">Case Queue</CardTitle>
                   <CardDescription>AI-ranked urgency (1–10). Review to open the case detail panel.</CardDescription>
@@ -129,7 +139,7 @@ export default function CounselorPortal() {
               </Card>
             </div>
 
-            <Card className="border-slate-200 bg-white/85">
+            <Card className="bridge-card">
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between gap-4">
                   <div>

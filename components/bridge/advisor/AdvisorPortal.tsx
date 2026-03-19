@@ -61,7 +61,7 @@ export default function AdvisorPortal() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
+      <div className="bridge-hero">
         <div className="flex items-start gap-3">
           <Info className="mt-0.5 h-5 w-5 text-primary" />
           <div className="min-w-0">
@@ -76,7 +76,7 @@ export default function AdvisorPortal() {
         </div>
       </div>
 
-      <Card className="border-slate-200 bg-white/85">
+      <Card className="bridge-card">
         <CardHeader className="pb-4">
           <div className="flex items-start justify-between gap-3">
             <div>

@@ -45,7 +45,7 @@ export default function InstitutionalDashboard() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+      <div className="bridge-hero flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold tracking-tight">Institutional Dashboard</h1>
           <p className="mt-1 text-sm text-muted-foreground">
@@ -58,7 +58,7 @@ export default function InstitutionalDashboard() {
       </div>
 
       <div className="grid gap-4 lg:grid-cols-4">
-        <Card className="border-slate-200 bg-white/85">
+        <Card className="bridge-card">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm flex items-center gap-2">
               <Activity className="h-4 w-4 text-primary" /> Students with Unmet Need
@@ -69,7 +69,7 @@ export default function InstitutionalDashboard() {
             <div className="text-3xl font-bold">{institutionalKpis.studentsWithUnmetNeed.toLocaleString("en-US")}</div>
           </CardContent>
         </Card>
-        <Card className="border-slate-200 bg-white/85">
+        <Card className="bridge-card">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm flex items-center gap-2">
               <Shield className="h-4 w-4 text-primary" /> Active Aid Holds
@@ -80,7 +80,7 @@ export default function InstitutionalDashboard() {
             <div className="text-3xl font-bold">{institutionalKpis.activeAidHolds}</div>
           </CardContent>
         </Card>
-        <Card className="border-slate-200 bg-white/85">
+        <Card className="bridge-card">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm flex items-center gap-2">
               <Activity className="h-4 w-4 text-primary" /> At-Risk of Dropout
@@ -91,7 +91,7 @@ export default function InstitutionalDashboard() {
             <div className="text-3xl font-bold">{institutionalKpis.atRiskOfDropout}</div>
           </CardContent>
         </Card>
-        <Card className="border-slate-200 bg-white/85">
+        <Card className="bridge-card">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm flex items-center gap-2">
               <Activity className="h-4 w-4 text-primary" /> Emergency Funds Disbursed
@@ -105,7 +105,7 @@ export default function InstitutionalDashboard() {
       </div>
 
       <div className="grid gap-6 xl:grid-cols-2">
-        <Card className="border-slate-200 bg-white/85">
+        <Card className="bridge-card">
           <CardHeader>
             <CardTitle className="text-base">Aid Hold Resolution Time by Department</CardTitle>
             <CardDescription>Average days to resolution (last 6 months).</CardDescription>
@@ -127,7 +127,7 @@ export default function InstitutionalDashboard() {
           </CardContent>
         </Card>
 
-        <Card className="border-slate-200 bg-white/85">
+        <Card className="bridge-card">
           <CardHeader>
             <CardTitle className="text-base">At-Risk Breakdown (Demographics)</CardTitle>
             <CardDescription>Share of flagged students by group.</CardDescription>
@@ -168,7 +168,7 @@ export default function InstitutionalDashboard() {
         </Card>
       </div>
 
-      <Card className="border-slate-200 bg-white/85">
+      <Card className="bridge-card">
         <CardHeader>
           <CardTitle className="text-base">Unresolved Aid Issues Concentration</CardTitle>
           <CardDescription>Heatmap-style view by academic department.</CardDescription>
@@ -220,7 +220,7 @@ export default function InstitutionalDashboard() {
         </CardContent>
       </Card>
 
-      <Card className="border-slate-200 bg-white/85">
+      <Card className="bridge-card">
         <CardHeader>
           <CardTitle className="text-base">AI Flags vs. Human Overrides</CardTitle>
           <CardDescription>Counselor modifications are a healthy validation signal.</CardDescription>

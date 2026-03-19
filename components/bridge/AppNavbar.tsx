@@ -45,18 +45,18 @@ export default function AppNavbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b bg-background/85 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-2">
+    <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-background/90 backdrop-blur-xl">
+      <div className="mx-auto w-full max-w-7xl px-4 pb-3 pt-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-3">
           <Link
             href="/student"
-            className="flex items-center gap-2 rounded-md px-2 py-1 hover:bg-muted/50"
+            className="flex items-center gap-2 rounded-xl px-2 py-1.5 transition hover:bg-white/80"
           >
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-md shadow-primary/20">
               <span className="font-black tracking-tight">B</span>
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="text-sm font-black tracking-wide text-foreground">
+              <span className="text-sm font-black tracking-[0.04em] text-foreground">
                 BRIDGE
               </span>
               <span className="text-[11px] text-muted-foreground">
@@ -64,9 +64,13 @@ export default function AppNavbar() {
               </span>
             </span>
           </Link>
+
+          <div className="flex items-center gap-3">
+            <RoleSwitcher />
+          </div>
         </div>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="mt-3 flex items-center gap-1 overflow-x-auto pb-1">
           {NAV_ITEMS.map((item) => {
             const active = pathname === item.href || pathname.startsWith(item.href + "/");
             return (
@@ -76,8 +80,8 @@ export default function AppNavbar() {
                 variant={active ? "default" : "ghost"}
                 size="sm"
                 className={cn(
-                  "h-9 rounded-md px-3",
-                  active ? "shadow-sm" : "text-muted-foreground",
+                  "h-8 rounded-lg px-3 text-xs sm:h-9 sm:text-sm",
+                  active ? "shadow-sm shadow-primary/20" : "text-muted-foreground",
                 )}
               >
                 <Link href={item.href} className="flex items-center">
@@ -88,10 +92,6 @@ export default function AppNavbar() {
             );
           })}
         </nav>
-
-        <div className="flex items-center gap-3">
-          <RoleSwitcher />
-        </div>
       </div>
     </header>
   );

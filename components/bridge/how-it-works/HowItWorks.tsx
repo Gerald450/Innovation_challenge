@@ -29,9 +29,9 @@ function Node({
 
 export default function HowItWorks() {
   return (
-    <div className="rounded-3xl border border-white/10 bg-gradient-to-b from-slate-950 to-slate-900 p-6 sm:p-8">
+    <div className="rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_top_left,_#1e1b4b_0%,_#0f172a_35%,_#020617_100%)] p-6 shadow-2xl sm:p-8">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold tracking-tight text-white">
+        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
           How It Works
         </h1>
         <p className="mt-2 text-sm text-white/75 max-w-3xl">
